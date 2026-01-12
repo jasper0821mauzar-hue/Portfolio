@@ -1045,23 +1045,32 @@ footer {
     }
 
 }
-.contact-links {
+/* Base button styling for contact info */
+.contact-links .btn {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 0.5rem; /* space between icon and text */
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1.2rem; /* base font size */
+    cursor: default; /* non-clickable */
+    user-select: text; /* allow text selection */
+    flex: 1 1 auto; /* allow responsive shrinking */
+    min-width: 180px;
 }
 
-/* Ensure proper responsive stacking on small screens */
+/* Smaller screens: make text smaller and stacked nicely */
 @media (max-width: 640px) {
+    .contact-links .btn {
+        font-size: 1rem; /* smaller font */
+        padding: 0.6rem 1rem;
+        gap: 0.3rem; /* smaller gap for tight space */
+    }
+
     .contact-links {
         flex-direction: column;
         align-items: center;
     }
-
-    .contact-links .btn {
-        width: 100%;
-        max-width: 300px;
-        text-align: center;
-    }
 }
+
