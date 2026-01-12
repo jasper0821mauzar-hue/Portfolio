@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="logo2.png" type="image/png">
+</head>
+<body>
+    <div class="galaxy-bg"></div>
+    <div class="stars" id="stars"></div>
+    
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
+
+    <div class="shooting-star" style="top: 10%; right: 20%;"></div>
+    <div class="shooting-star" style="top: 30%; right: 40%; animation-delay: 2s;"></div>
+    <div class="shooting-star" style="top: 50%; right: 60%; animation-delay: 4s;"></div>
+
+    <!-- Comets -->
+    <div class="comet-container" id="cometContainer"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>⚡</span>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <img src="profile.JPG" class="profile-image" alt="Profile">
+                </div>
+                
+                <div class="status-badge">● Available for Opportunities</div>
+                <h1>
+                    IT Student<br>
+                    <span class="gradient-text">& Creative Developer</span>
+                </h1>
+                <p>Orchestrating innovative solutions through code, design, and technology. Building the digital future one project at a time.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects →
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="floating-device">
+                <div class="device-scene">
+                    <div class="orbit-ring orbit-ring-1">
+                        <div class="orbit-icon orbit-icon-1"></div>
+                    </div>
+                    <div class="orbit-ring orbit-ring-2">
+                        <div class="orbit-icon orbit-icon-2"></div>
+                    </div>
+                    <div class="orbit-ring orbit-ring-3">
+                        <div class="orbit-icon orbit-icon-3"></div>
+                    </div>
+                    <div class="device">
+                        <div class="device-screen">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-value">Active</div>
+                <div class="stat-label">Learning Journey</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🚀</div>
+                <div class="stat-value">IOT</div>
+                <div class="stat-label">Capstone Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-value">Team</div>
+                <div class="stat-label">Collaborative Work</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">About Me</h2>
+                <p class="section-subtitle">Who orchestrates and delivers</p>
+            </div>
+
+            <div class="skill-card" style="max-width: 900px; margin: 0 auto;">
+                <h3 style="color: #a855f7; margin-bottom: 1.5rem;">My Objective</h3>
+                <p style="color: #b4b4b4; line-height: 1.8; margin-bottom: 2rem;">
+                    To be a part of a company where I can gain added knowledge and where I can have a job experience that will lead to the enhancement of my working capabilities while earning a living.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 15px; border: 1px solid rgba(168, 85, 247, 0.3);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
+                        <p style="color: #b4b4b4; font-size: 0.95rem;">Use my graphic design skills and web development knowledge to support others</p>
+                    </div>
+                    <div style="padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 15px; border: 1px solid rgba(168, 85, 247, 0.3);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
+                        <p style="color: #b4b4b4; font-size: 0.95rem;">Be part of a team that values creativity, teamwork, and continuous learning</p>
+                    </div>
+                    <div style="padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 15px; border: 1px solid rgba(168, 85, 247, 0.3);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                        <p style="color: #b4b4b4; font-size: 0.95rem;">Create visually appealing designs and functional websites that inspire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Skills & Expertise</h2>
+                <p class="section-subtitle">The execution layer across technologies</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Graphic Design</h3>
+                    <ul class="skill-list">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Affinity 3</li>
+                        <li>Canva</li>
+                        <li>Digital Visuals & Layouts</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Web Creation</li>
+                        <li>Basic Coding Fundamentals</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>System Administration</h3>
+                    <ul class="skill-list">
+                        <li>Troubleshooting</li>
+                        <li>System Navigation</li>
+                        <li>Google Workspace</li>
+                        <li>System Maintenance</li>
+                        <li>Technical Support</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Mobile & IOT</h3>
+                    <ul class="skill-list">
+                        <li>Android Studio</li>
+                        <li>IOT Development</li>
+                        <li>Device Integration</li>
+                        <li>3D Modeling (Blender)</li>
+                        <li>Hardware-Software Integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="skill-card">
+                    <h3 style="color: #a855f7; margin-bottom: 1.5rem;">Core Strengths</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
+                            <span style="color: #a855f7;">▹</span> Adaptable & Dedicated
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
+                            <span style="color: #a855f7;">▹</span> Creative & Innovative
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
+                            <span style="color: #a855f7;">▹</span> Works Well Under Pressure
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
+                            <span style="color: #a855f7;">▹</span> Analytical Thinking
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
+                            <span style="color: #a855f7;">▹</span> Time Management
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
+                            <span style="color: #a855f7;">▹</span> Continuous Learner
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- IOT Capstone Project with Gallery -->
+                <div class="project-card featured">
+                    <div class="project-gallery">
+                        <div class="gallery-main">
+                            <img id="capstone-main-img" src="capstone1.jpg" alt="IOT Capstone" class="gallery-main-image">
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <img src="capstone1.jpg" alt="Capstone 1" class="gallery-thumb active" data-target="capstone" data-index="0">
+                            <img src="capstone2.jpg" alt="Capstone 2" class="gallery-thumb" data-target="capstone" data-index="1">
+                            <img src="landing.png" alt="Capstone 3" class="gallery-thumb" data-target="capstone" data-index="2">
+                        </div>
+                        <div class="project-badge">CAPSTONE PROJECT</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IoT Capstone Project</h3>
+                        <p>
+                            <strong>Ecodrip:</strong> An IoT Web-Based Japanese Eggplant Drip Irrigation with Smart Filtration System for Cuya's Farm. 
+                            The system was developed by a three-member team and features a responsive web interface optimized for both desktop and mobile devices. 
+                            The platform enables efficient monitoring and management of irrigation processes to support sustainable farming practices.
+                        </p>
+                        <p>
+                            Project link: 
+                            <a href="https://ecodrip-f6d59.web.app/"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             style="
+                               display: inline-block;
+                               margin-top: 12px;
+                               padding: 10px 18px;
+                               background: linear-gradient(135deg, #A855F7,#6366F1);
+                               color: #ffffff;
+                               text-decoration: none;
+                               font-weight: 600;
+                               border-radius: 8px;
+                               box-shadow: 0 6px 16px rgba(151, 90, 248, 0.35);
+                               transition: transform 0.2s ease, box-shadow 0.2s ease;
+                             "
+                             onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 24px rgba(14,165,233,0.45)'"
+                             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 16px rgba(14,165,233,0.35)'"
+                          >
+                            🔗 View Capstone Project
+                          </a>
+                        </p>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Web Development</span>
+                            <span class="project-tag">IOT</span>
+                            <span class="project-tag">Device Integration</span>
+                            <span class="project-tag">Hardware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design Portfolio with Gallery -->
+                <div class="project-card featured">
+                    <div class="project-gallery">
+                        <div class="gallery-main">
+                            <img id="design-main-img" src="poster1.jpg" alt="Graphic Design" class="gallery-main-image">
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <img src="poster1.jpg" alt="Design 1" class="gallery-thumb active" data-target="design" data-index="0">
+                            <img src="poster2.jpg" alt="Design 2" class="gallery-thumb" data-target="design" data-index="1">
+                            <img src="poster3.jpg" alt="Design 3" class="gallery-thumb" data-target="design" data-index="2">
+                            <img src="poster4.jpg" alt="Design 4" class="gallery-thumb" data-target="design" data-index="3">
+                            <img src="poster5.jpg" alt="Design 5" class="gallery-thumb" data-target="design" data-index="4">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Graphic Design Portfolio</h3>
+                        <p>Created various digital visuals and layouts for different clients using Adobe Creative Suite and modern design principles.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Photoshop</span>
+                            <span class="project-tag">Illustrator</span>
+                            <span class="project-tag">Canva</span>
+                            <span class="project-tag">Affinity3</span>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Modeling Projects -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-placeholder">
+                            <div style="font-size: 4rem;">🎲</div>
+                            <div class="project-placeholder-text">3D Models</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>3D Modeling Projects</h3>
+                        <p>Basic 3D models and renders created using Blender for various visual and presentation purposes.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Blender</span>
+                            <span class="project-tag">3D Modeling</span>
+                            <span class="project-tag">Rendering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Android Development -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-placeholder">
+                            <div style="font-size: 4rem;">📱</div>
+                            <div class="project-placeholder-text">Mobile Apps</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Android Development</h3>
+                        <p>Beginner-level Android applications exploring mobile development fundamentals and UI/UX design principles.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Android Studio</span>
+                            <span class="project-tag">Java/Kotlin</span>
+                            <span class="project-tag">Mobile UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Let's Connect</h2>
+                <p class="section-subtitle">Start the conversation</p>
+            </div>
+
+            <div class="contact-card">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-links">
+                    <div class="btn btn-primary email-display">
+                        📧 jasper21.mauzar@gmail.com
+                    </div>
+                    <div class="btn btn-secondary email-display">
+                        📧 jasper0821.mauzar@gmail.com
+                    </div>
+                     <dix class="btn btn-secondary">
+                        📱 09760169853
+                    
+                </div>
+                <p style="margin-top: 2rem; color: #888;">Based in Province of Sariaya Quezon, Philippines 🇵🇭</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 IT Student Portfolio.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">innovation and creativity </p>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
