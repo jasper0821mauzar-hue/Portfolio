@@ -1043,4 +1043,25 @@ footer {
         right: 20px;
         font-size: 30px;
     }
+
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Ensure proper responsive stacking on small screens */
+@media (max-width: 640px) {
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-links .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
 }
