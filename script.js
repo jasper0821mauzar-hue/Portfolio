@@ -309,3 +309,22 @@ if (statusBadge) {
 console.log('%c🚀 Welcome to my Portfolio!', 'color: #a855f7; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with HTML, CSS & JavaScript', 'color: #6366f1; font-size: 14px;');
 console.log('%cFeel free to explore the code!', 'color: #3b82f6; font-size: 14px;');
+
+// 🔧 Force first thumbnail image as default main image
+document.querySelectorAll('.achievement-gallery').forEach(gallery => {
+    const firstThumb = gallery.querySelector('.achievement-thumb');
+    if (!firstThumb) return;
+
+    const target = firstThumb.dataset.target;
+    const mainImg = document.getElementById(target + '-main-img');
+
+    if (mainImg) {
+        mainImg.src = firstThumb.src;
+
+        // Set active state correctly
+        gallery.querySelectorAll('.achievement-thumb').forEach(t => {
+            t.classList.remove('active');
+        });
+        firstThumb.classList.add('active');
+    }
+});
