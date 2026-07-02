@@ -109,7 +109,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     });
 });
 
-// Gallery Functionality for Projects
+// Gallery Functionality
 const galleryThumbs = document.querySelectorAll('.gallery-thumb');
 
 galleryThumbs.forEach(function(thumb) {
@@ -135,32 +135,6 @@ galleryThumbs.forEach(function(thumb) {
     });
 });
 
-// Achievement Gallery Functionality
-const achievementThumbs = document.querySelectorAll('.achievement-thumb');
-
-achievementThumbs.forEach(function(thumb) {
-    thumb.addEventListener('click', function() {
-        const target = this.getAttribute('data-target');
-        const mainImg = document.getElementById(target + '-main-img');
-        
-        // Update main image
-        mainImg.src = this.src;
-        
-        // Update active state
-        const siblingThumbs = this.parentElement.querySelectorAll('.achievement-thumb');
-        siblingThumbs.forEach(function(sibling) {
-            sibling.classList.remove('active');
-        });
-        this.classList.add('active');
-        
-        // Add zoom effect
-        mainImg.style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            mainImg.style.transform = 'scale(1)';
-        }, 300);
-    });
-});
-
 // Image Modal Functionality
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
@@ -169,15 +143,6 @@ const closeModal = document.querySelector('.modal-close');
 
 // Add click event to all gallery main images
 document.querySelectorAll('.gallery-main-image').forEach(function(img) {
-    img.addEventListener('click', function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;
-        modalCaption.textContent = this.alt;
-    });
-});
-
-// Add click event to achievement main images for modal
-document.querySelectorAll('.achievement-main-image').forEach(function(img) {
     img.addEventListener('click', function() {
         modal.style.display = 'block';
         modalImg.src = this.src;
@@ -220,57 +185,12 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all cards for animation on scroll
-document.querySelectorAll('.skill-card, .project-card, .stat-card, .achievement-card').forEach(function(card) {
+document.querySelectorAll('.skill-card, .project-card, .stat-card').forEach(function(card) {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
     card.style.transition = 'all 0.6s ease-out';
     observer.observe(card);
 });
-
-// Counter Animation for Achievement Stats
-function animateAchievementStats() {
-    const statNumbers = document.querySelectorAll('.achievement-stats .stat-number');
-    
-    statNumbers.forEach(function(stat) {
-        const text = stat.textContent.trim();
-        
-        // Only animate if it's a pure number
-        if (!isNaN(text) && text !== '') {
-            const target = parseInt(text);
-            let current = 0;
-            const increment = target / 50;
-            const duration = 1500;
-            const stepTime = duration / 50;
-            
-            stat.textContent = '0';
-            
-            const counter = setInterval(function() {
-                current += increment;
-                if (current >= target) {
-                    stat.textContent = target;
-                    clearInterval(counter);
-                } else {
-                    stat.textContent = Math.floor(current);
-                }
-            }, stepTime);
-        }
-    });
-}
-
-// Trigger animation when achievement stats section becomes visible
-const achievementStatsObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            animateAchievementStats();
-            achievementStatsObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.5 });
-
-const achievementStatsSection = document.querySelector('.achievement-stats');
-if (achievementStatsSection) {
-    achievementStatsObserver.observe(achievementStatsSection);
-}
 
 // Add smooth reveal animation for hero content
 window.addEventListener('load', function() {
@@ -309,22 +229,3 @@ if (statusBadge) {
 console.log('%c🚀 Welcome to my Portfolio!', 'color: #a855f7; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with HTML, CSS & JavaScript', 'color: #6366f1; font-size: 14px;');
 console.log('%cFeel free to explore the code!', 'color: #3b82f6; font-size: 14px;');
-
-// 🔧 Force first thumbnail image as default main image
-document.querySelectorAll('.achievement-gallery').forEach(gallery => {
-    const firstThumb = gallery.querySelector('.achievement-thumb');
-    if (!firstThumb) return;
-
-    const target = firstThumb.dataset.target;
-    const mainImg = document.getElementById(target + '-main-img');
-
-    if (mainImg) {
-        mainImg.src = firstThumb.src;
-
-        // Set active state correctly
-        gallery.querySelectorAll('.achievement-thumb').forEach(t => {
-            t.classList.remove('active');
-        });
-        firstThumb.classList.add('active');
-    }
-});

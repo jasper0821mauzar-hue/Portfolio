@@ -10,14 +10,14 @@
 <body>
     <div class="galaxy-bg"></div>
     <div class="stars" id="stars"></div>
-    
+
     <div class="nebula nebula-1"></div>
     <div class="nebula nebula-2"></div>
     <div class="nebula nebula-3"></div>
 
-    <div class="shooting-star" style="top: 10%; right: 20%;"></div>
-    <div class="shooting-star" style="top: 30%; right: 40%; animation-delay: 2s;"></div>
-    <div class="shooting-star" style="top: 50%; right: 60%; animation-delay: 4s;"></div>
+    <div class="shooting-star shooting-star-1"></div>
+    <div class="shooting-star shooting-star-2"></div>
+    <div class="shooting-star shooting-star-3"></div>
 
     <!-- Comets -->
     <div class="comet-container" id="cometContainer"></div>
@@ -33,7 +33,6 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -46,9 +45,9 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="profile-image-container">
-                    <img src="profile.jpg" class="profile-image" alt="Profile">
+                    <img src="profile.JPG" class="profile-image" alt="Profile">
                 </div>
-                
+
                 <div class="status-badge">● Available for Opportunities</div>
                 <h1>
                     IT Student<br>
@@ -111,35 +110,63 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">About Me</h2>
-                <p class="section-subtitle">Who orchestrates and delivers</p>
+    <!-- About Section -->
+<section id="about" class="about">
+    <div class="section-container">
+
+        <div class="section-header">
+            <h2 class="section-title gradient-text">
+                About Me
+            </h2>
+            <p class="section-subtitle">
+                My mission, vision, and professional values.
+            </p>
+        </div>
+
+        <div class="mv-container">
+
+            <!-- Mission -->
+            <div class="mv-card">
+
+                <div class="mv-icon">
+                    🎯
+                </div>
+
+                <h3>Mission</h3>
+
+                <p>
+                    To create innovative web designs, UI/UX experiences, and
+                    creative digital solutions that provide value to clients
+                    and users while continuously expanding my technical
+                    knowledge, adapting to emerging technologies, and growing
+                    as an IT professional.
+                </p>
+
             </div>
 
-            <div class="skill-card" style="max-width: 900px; margin: 0 auto;">
-                <h3 style="color: #a855f7; margin-bottom: 1.5rem;">My Objective</h3>
-                <p style="color: #b4b4b4; line-height: 1.8; margin-bottom: 2rem;">
-                    To be a part of a company where I can gain added knowledge and where I can have a job experience that will lead to the enhancement of my working capabilities while earning a living.
-                </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                    <div style="padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 15px; border: 1px solid rgba(168, 85, 247, 0.3);">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
-                        <p style="color: #b4b4b4; font-size: 0.95rem;">Use my graphic design skills and web development knowledge to support others</p>
-                    </div>
-                    <div style="padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 15px; border: 1px solid rgba(168, 85, 247, 0.3);">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
-                        <p style="color: #b4b4b4; font-size: 0.95rem;">Be part of a team that values creativity, teamwork, and continuous learning</p>
-                    </div>
-                    <div style="padding: 1.5rem; background: rgba(168, 85, 247, 0.1); border-radius: 15px; border: 1px solid rgba(168, 85, 247, 0.3);">
-                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
-                        <p style="color: #b4b4b4; font-size: 0.95rem;">Create visually appealing designs and functional websites that inspire</p>
-                    </div>
+            <!-- Vision -->
+            <div class="mv-card">
+
+                <div class="mv-icon">
+                    🚀
                 </div>
+
+                <h3>Vision</h3>
+
+                <p>
+                    To become a dependable IT professional recognized for
+                    delivering creative, user-focused, and high-quality digital
+                    solutions while embracing continuous learning and adapting
+                    to the ever-evolving technology industry.
+                </p>
+
             </div>
+
         </div>
-    </section>
+
+    </div>
+</section>
+
 
     <!-- Skills Section -->
     <section id="skills">
@@ -199,122 +226,29 @@
                 </div>
             </div>
 
-            <div style="margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <div class="strengths-wrapper">
                 <div class="skill-card">
-                    <h3 style="color: #a855f7; margin-bottom: 1.5rem;">Core Strengths</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
-                            <span style="color: #a855f7;">▹</span> Adaptable & Dedicated
+                    <h3 class="about-heading">Core Strengths</h3>
+                    <div class="strengths-grid">
+                        <div class="strength-item">
+                            <span class="strength-bullet">▹</span> Adaptable & Dedicated
                         </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
-                            <span style="color: #a855f7;">▹</span> Creative & Innovative
+                        <div class="strength-item">
+                            <span class="strength-bullet">▹</span> Creative & Innovative
                         </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
-                            <span style="color: #a855f7;">▹</span> Works Well Under Pressure
+                        <div class="strength-item">
+                            <span class="strength-bullet">▹</span> Works Well Under Pressure
                         </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
-                            <span style="color: #a855f7;">▹</span> Analytical Thinking
+                        <div class="strength-item">
+                            <span class="strength-bullet">▹</span> Analytical Thinking
                         </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
-                            <span style="color: #a855f7;">▹</span> Time Management
+                        <div class="strength-item">
+                            <span class="strength-bullet">▹</span> Time Management
                         </div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #b4b4b4;">
-                            <span style="color: #a855f7;">▹</span> Continuous Learner
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Achievements & Awards</h2>
-                <p class="section-subtitle">Recognitions and milestones</p>
-            </div>
-
-            <div class="achievements-grid">
-                <!-- Visual Graphics Champion 2024 -->
-                <div class="achievement-card">
-                    <div class="achievement-gallery">
-                        <div class="achievement-main">
-                            <img id="visual2024-main-img" src="visual2024.jpg" alt="Visual Graphics Champion 2024" class="achievement-main-image">
-                        </div>
-                        <div class="achievement-badge">🏆 2024</div>
-                    </div>
-                    <div class="achievement-content">
-                        <div class="achievement-icon">🎨</div>
-                        <h3>Visual Graphics Champion 2024</h3>
-                        <p>First place in the Visual Graphics Competition, demonstrating excellence in digital design and creative problem-solving.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-year">2024</span>
-                            <span class="achievement-category">Design Competition</span>
+                        <div class="strength-item">
+                            <span class="strength-bullet">▹</span> Continuous Learner
                         </div>
                     </div>
-                </div>
-
-                <!-- Visual Graphics Champion 2025 -->
-                <div class="achievement-card">
-                    <div class="achievement-gallery">
-                        <div class="achievement-main">
-                            <img id="visual2025-main-img" src="visual2025.jpg" alt="Visual Graphics Champion 2025" class="achievement-main-image">
-                        </div>
-                        <div class="achievement-thumbnails">
-                            <img src="visual2025.jpg" alt="Visual 2025-1" class="achievement-thumb active" data-target="visual2025" data-index="0">
-                            <img src="visual2025(2).jpg" alt="Visual 2025-2" class="achievement-thumb" data-target="visual2025" data-index="1">
-                        </div>
-                        <div class="achievement-badge">🏆 2025</div>
-                    </div>
-                    <div class="achievement-content">
-                        <div class="achievement-icon">🎨</div>
-                        <h3>Visual Graphics Champion 2025</h3>
-                        <p>Back-to-back champion in Visual Graphics, showcasing continuous growth and mastery in graphic design excellence.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-year">2025</span>
-                            <span class="achievement-category">Design Competition</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Capstone Project Expo 2025 -->
-                <div class="achievement-card featured-achievement">
-                    <div class="achievement-gallery">
-                        <div class="achievement-main">
-                            <img id="expo-main-img" src="expo.jpg" alt="Capstone Project Expo 2025" class="achievement-main-image">
-                        </div>
-                        <div class="achievement-thumbnails">
-                            <img src="expo.jpg" alt="Expo" class="achievement-thumb active" data-target="expo" data-index="0">
-                            <img src="capstone1.jpg" alt="Capstone" class="achievement-thumb" data-target="expo" data-index="1">
-                        </div>
-                        <div class="achievement-badge">🚀 CAPSTONE</div>
-                    </div>
-                    <div class="achievement-content">
-                        <div class="achievement-icon">🔬</div>
-                        <h3>Capstone Project Expo 2025</h3>
-                        <p>Successfully presented Ecodrip IoT Web-Based Japanese Eggplant Drip Irrigation System at the Capstone Project Expo, demonstrating innovation in agricultural technology and IoT integration.</p>
-                        <div class="achievement-meta">
-                            <span class="achievement-year">2025</span>
-                            <span class="achievement-category">IoT & Innovation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Achievement Stats -->
-            <div class="achievement-stats">
-                <div class="achievement-stat">
-                    <div class="stat-number">3</div>
-                    <div class="stat-text">Major Awards</div>
-                </div>
-                <div class="achievement-stat">
-                    <div class="stat-number">2</div>
-                    <div class="stat-text">Championships</div>
-                </div>
-                <div class="achievement-stat">
-                    <div class="stat-number">2024-2025</div>
-                    <div class="stat-text">Winning Years</div>
                 </div>
             </div>
         </div>
@@ -344,33 +278,18 @@
                     <div class="project-content">
                         <h3>IoT Capstone Project</h3>
                         <p>
-                            <strong>Ecodrip:</strong> An IoT Web-Based Japanese Eggplant Drip Irrigation with Smart Filtration System for Cuya's Farm. 
-                            The system was developed by a three-member team and features a responsive web interface optimized for both desktop and mobile devices. 
+                            <strong>Ecodrip:</strong> An IoT Web-Based Japanese Eggplant Drip Irrigation with Smart Filtration System for Cuya's Farm.
+                            The system was developed by a three-member team and features a responsive web interface optimized for both desktop and mobile devices.
                             The platform enables efficient monitoring and management of irrigation processes to support sustainable farming practices.
                         </p>
-                        <p>
-                            Project link: 
-                            <a href="https://ecodrip-f6d59.web.app/"
-                             target="_blank"
-                             rel="noopener noreferrer"
-                             style="
-                               display: inline-block;
-                               margin-top: 12px;
-                               padding: 10px 18px;
-                               background: linear-gradient(135deg, #A855F7,#6366F1);
-                               color: #ffffff;
-                               text-decoration: none;
-                               font-weight: 600;
-                               border-radius: 8px;
-                               box-shadow: 0 6px 16px rgba(151, 90, 248, 0.35);
-                               transition: transform 0.2s ease, box-shadow 0.2s ease;
-                             "
-                             onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 24px rgba(14,165,233,0.45)'"
-                             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 16px rgba(14,165,233,0.35)'"
-                          >
-                            🔗 View Capstone Project
-                          </a>
-                        </p>
+                        <div class="project-link">
+    <a href="https://ecodrip-f6d59.web.app/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="capstone-btn">
+        🔗 View Live Capstone Project
+    </a>
+</div>
 
                         <div class="project-tags">
                             <span class="project-tag">Web Development</span>
@@ -388,12 +307,17 @@
                             <img id="design-main-img" src="poster1.jpg" alt="Graphic Design" class="gallery-main-image">
                         </div>
                         <div class="gallery-thumbnails">
-                            <img src="poster1.jpg" alt="Design 1" class="gallery-thumb active" data-target="design" data-index="0">
-                            <img src="poster2.jpg" alt="Design 2" class="gallery-thumb" data-target="design" data-index="1">
-                            <img src="poster3.jpg" alt="Design 3" class="gallery-thumb" data-target="design" data-index="2">
-                            <img src="poster4.jpg" alt="Design 4" class="gallery-thumb" data-target="design" data-index="3">
-                            <img src="poster5.jpg" alt="Design 5" class="gallery-thumb" data-target="design" data-index="4">
-                        </div>
+    <img src="Poster1.JPG" alt="Design 1" class="gallery-thumb active" data-target="design" data-index="0">
+    <img src="Poster2.JPG" alt="Design 2" class="gallery-thumb" data-target="design" data-index="1">
+    <img src="Poster3.JPG" alt="Design 3" class="gallery-thumb" data-target="design" data-index="2">
+    <img src="Poster4.JPG" alt="Design 4" class="gallery-thumb" data-target="design" data-index="3">
+    <img src="Poster5.JPG" alt="Design 5" class="gallery-thumb" data-target="design" data-index="4">
+    <img src="Poster6.JPG" alt="Design 6" class="gallery-thumb" data-target="design" data-index="5">
+    <img src="Poster7.JPG" alt="Design 7" class="gallery-thumb" data-target="design" data-index="6">
+    <img src="Poster8.JPG" alt="Design 8" class="gallery-thumb" data-target="design" data-index="7">
+    <img src="Poster10.JPG" alt="Design 10" class="gallery-thumb" data-target="design" data-index="8">
+    <img src="Poster11.JPG" alt="Design 11" class="gallery-thumb" data-target="design" data-index="9">
+</div>
                     </div>
                     <div class="project-content">
                         <h3>Graphic Design Portfolio</h3>
@@ -402,16 +326,27 @@
                             <span class="project-tag">Photoshop</span>
                             <span class="project-tag">Illustrator</span>
                             <span class="project-tag">Canva</span>
-                            <span class="project-tag">Affinity3</span>  
+                            <span class="project-tag">Affinity3</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3D Modeling Projects -->
+                
+<!-- Logos -->
+<div class="project-card featured"><div class="project-gallery"><div class="gallery-main"><img id="logo-main-img" src="Logo3.png" class="gallery-main-image"></div><div class="gallery-thumbnails">
+<img src="Logo3.png" class="gallery-thumb active" data-target="logo"><img src="Logo4.png" class="gallery-thumb" data-target="logo"><img src="Logo5.png" class="gallery-thumb" data-target="logo"><img src="Logo6.png" class="gallery-thumb" data-target="logo"><img src="Logo7.png" class="gallery-thumb" data-target="logo"><img src="Logo8.png" class="gallery-thumb" data-target="logo"><img src="Logo9.png" class="gallery-thumb" data-target="logo"><img src="Logo10.png" class="gallery-thumb" data-target="logo"><img src="Logo11.JPG" class="gallery-thumb" data-target="logo"><img src="Logo12.png" class="gallery-thumb" data-target="logo"><img src="Logo13.png" class="gallery-thumb" data-target="logo"></div></div><div class="project-content"><h3>Logo Designs</h3></div></div>
+<!-- Pins -->
+<div class="project-card featured"><div class="project-gallery"><div class="gallery-main"><img id="pin-main-img" src="Pin1.JPG" class="gallery-main-image"></div><div class="gallery-thumbnails">
+<img src="Pin1.JPG" class="gallery-thumb active" data-target="pin"><img src="Pin2.JPG" class="gallery-thumb" data-target="pin"><img src="Pin3.JPG" class="gallery-thumb" data-target="pin"><img src="Pin4.JPG" class="gallery-thumb" data-target="pin"><img src="Pin5.JPG" class="gallery-thumb" data-target="pin"><img src="Pin6.JPG" class="gallery-thumb" data-target="pin"></div></div><div class="project-content"><h3>Pin Designs</h3></div></div>
+<!-- Tshirts -->
+<div class="project-card featured"><div class="project-gallery"><div class="gallery-main"><img id="tshirt-main-img" src="Tshirt1.png" class="gallery-main-image"></div><div class="gallery-thumbnails">
+<img src="Tshirt1.png" class="gallery-thumb active" data-target="tshirt"><img src="Tshirt2.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt3.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt4.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt5.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt6.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt7.png" class="gallery-thumb" data-target="tshirt"></div></div><div class="project-content"><h3>T-Shirt Designs</h3></div></div>
+
+<!-- 3D Modeling Projects -->
                 <div class="project-card">
                     <div class="project-image-container">
                         <div class="project-placeholder">
-                            <div style="font-size: 4rem;">🎲</div>
+                            <div class="project-placeholder-icon">🎲</div>
                             <div class="project-placeholder-text">3D Models</div>
                         </div>
                     </div>
@@ -430,7 +365,7 @@
                 <div class="project-card">
                     <div class="project-image-container">
                         <div class="project-placeholder">
-                            <div style="font-size: 4rem;">📱</div>
+                            <div class="project-placeholder-icon">📱</div>
                             <div class="project-placeholder-text">Mobile Apps</div>
                         </div>
                     </div>
@@ -439,6 +374,7 @@
                         <p>Beginner-level Android applications exploring mobile development fundamentals and UI/UX design principles.</p>
                         <div class="project-tags">
                             <span class="project-tag">Android Studio</span>
+                            <span class="project-tag">Java/Kotlin</span>
                             <span class="project-tag">Mobile UI</span>
                         </div>
                     </div>
@@ -447,38 +383,39 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Let's Connect</h2>
-                <p class="section-subtitle">Start the conversation</p>
-            </div>
-
-            <div class="contact-card">
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                <div class="contact-links">
-                    <!-- Emails -->
-                    <div class="btn btn-primary email-display">
-                        📧 jasper21.mauzar@gmail.com
-                    </div>
-                    <div class="btn btn-secondary email-display">
-                        📧 jasper0821.mauzar@gmail.com
-                    </div>
-                    <!-- Phone -->
-                    <div class="btn btn-secondary phone-display">
-                        📱 09760169853
-                    </div>
-                </div>
-                <p style="margin-top: 2rem; color: #888;">Based in Province of Sariaya Quezon, Philippines 🇵🇭</p>
-            </div>
+   <!-- Contact Section -->
+<section id="contact">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title gradient-text">Let's Connect</h2>
+            <p class="section-subtitle">Start the conversation</p>
         </div>
-    </section>
+
+        <div class="contact-card">
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="contact-links">
+                <!-- Emails -->
+                <div class="btn btn-primary email-display">
+                    📧 jasper21.mauzar@gmail.com
+                </div>
+                <div class="btn btn-secondary email-display">
+                    📧 jasper0821.mauzar@gmail.com
+                </div>
+                <!-- Phone -->
+                <div class="btn btn-secondary phone-display">
+                    📱 09760169853
+                </div>
+            </div>
+            <p class="contact-location">Based in Province of Sariaya Quezon, Philippines 🇵🇭</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 IT Student Portfolio.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">innovation and creativity </p>
+        <p class="footer-tagline">innovation and creativity </p>
     </footer>
 
     <!-- Image Modal -->
@@ -491,6 +428,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
