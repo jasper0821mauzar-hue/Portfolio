@@ -1,430 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="icon" href="logo2.png" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasper Mauzar | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <div class="galaxy-bg"></div>
-    <div class="stars" id="stars"></div>
 
-    <div class="nebula nebula-1"></div>
-    <div class="nebula nebula-2"></div>
-    <div class="nebula nebula-3"></div>
+<div id="loader" class="loader">
+  <div class="wireframe-box">
+    <div class="wf wf-t"></div><div class="wf wf-s"></div>
+    <div class="wf-row"><div class="wf"></div><div class="wf"></div><div class="wf"></div></div>
+  </div>
+  <div class="loader-text">JM</div>
+</div>
 
-    <div class="shooting-star shooting-star-1"></div>
-    <div class="shooting-star shooting-star-2"></div>
-    <div class="shooting-star shooting-star-3"></div>
+<!-- Floating menu -->
+<div class="fab" id="fab">
+  <ul class="fab-menu" id="fabMenu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#profile">Professional background</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contacts</a></li>
+  </ul>
+  <button class="fab-btn" id="fabBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
 
-    <!-- Comets -->
-    <div class="comet-container" id="cometContainer"></div>
-
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span>⚡</span>
-                <span>Portfolio</span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" id="menuToggle">☰</button>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="profile-image-container">
-                    <img src="profile.jpg" class="profile-image" alt="Profile">
-                </div>
-
-                <div class="status-badge">● Available for Opportunities</div>
-                <h1>
-                    IT Student<br>
-                    <span class="gradient-text">& Creative Developer</span>
-                </h1>
-                <p>Orchestrating innovative solutions through code, design, and technology. Building the digital future one project at a time.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        View Projects →
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        Get In Touch
-                    </a>
-                </div>
-            </div>
-
-            <div class="floating-device">
-                <div class="device-scene">
-                    <div class="orbit-ring orbit-ring-1">
-                        <div class="orbit-icon orbit-icon-1"></div>
-                    </div>
-                    <div class="orbit-ring orbit-ring-2">
-                        <div class="orbit-icon orbit-icon-2"></div>
-                    </div>
-                    <div class="orbit-ring orbit-ring-3">
-                        <div class="orbit-icon orbit-icon-3"></div>
-                    </div>
-                    <div class="device">
-                        <div class="device-screen">
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stats-container">
-            <div class="stat-card">
-                <div class="stat-icon">⚡</div>
-                <div class="stat-value">Active</div>
-                <div class="stat-label">Learning Journey</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🚀</div>
-                <div class="stat-value">IOT</div>
-                <div class="stat-label">Capstone Completed</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">👥</div>
-                <div class="stat-value">Team</div>
-                <div class="stat-label">Collaborative Work</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <!-- About Section -->
-<section id="about" class="about">
-    <div class="section-container">
-
-        <div class="section-header">
-            <h2 class="section-title gradient-text">
-                About Me
-            </h2>
-            <p class="section-subtitle">
-                My mission, vision, and professional values.
-            </p>
-        </div>
-
-        <div class="mv-container">
-
-            <!-- Mission -->
-            <div class="mv-card">
-
-                <div class="mv-icon">
-                    🎯
-                </div>
-
-                <h3>Mission</h3>
-
-                <p>
-                    To create innovative web designs, UI/UX experiences, and
-                    creative digital solutions that provide value to clients
-                    and users while continuously expanding my technical
-                    knowledge, adapting to emerging technologies, and growing
-                    as an IT professional.
-                </p>
-
-            </div>
-
-            <!-- Vision -->
-            <div class="mv-card">
-
-                <div class="mv-icon">
-                    🚀
-                </div>
-
-                <h3>Vision</h3>
-
-                <p>
-                    To become a dependable IT professional recognized for
-                    delivering creative, user-focused, and high-quality digital
-                    solutions while embracing continuous learning and adapting
-                    to the ever-evolving technology industry.
-                </p>
-
-            </div>
-
-        </div>
-
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-stage">
+    <div class="hero-kicker">PORTFOLIO <span> / 2026</span></div>
+    <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+    <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+    <div class="hero-bottom-label" aria-hidden="true">CREATIVE MIND · TECHNICAL HANDS</div>
+    <div class="role-tag"><i></i><div><b>Graphic Designer</b><b>Frontend Developer</b></div></div>
+    <div class="avail"><em></em>Available for projects</div>
+    <img class="pf-img" src="Porfoliotxt.png" alt="Portfolio">
+    <img class="hero-photo" src="profile.png" alt="Jasper Mauzar">
+    <div class="hero-info">
+      <p class="hero-quote">&ldquo;Where skill meets curiosity, something new begins.&rdquo;</p>
+      <h2 class="hero-name">JASPER MAUZAR</h2>
+      <p class="hero-bio">A designer and builder who finds just as much meaning in a clean layout as a clean line of code.</p>
+      <p class="hero-location">Base in<br>Philippines</p>
     </div>
+    <img class="hero-logo" src="Porfoliologo.png" alt="JM logo">
+  </div>
 </section>
 
+<div class="marquee"><div class="track">
+  <span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>Figma</span><span>Canva</span><span>Affinity</span><span>Blender</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>IoT</span>
+  <span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>Figma</span><span>Canva</span><span>Affinity</span><span>Blender</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>IoT</span>
+</div></div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Skills & Expertise</h2>
-                <p class="section-subtitle">The execution layer across technologies</p>
-            </div>
+<!-- PROFESSIONAL BACKGROUND -->
+<section id="profile">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div><b data-count="10">0</b><small>Poster designs</small></div>
+      <div><b data-count="11">0</b><small>Logo designs</small></div>
+      <div><b data-count="7">0</b><small>T-shirt designs</small></div>
+      <div><b data-count="1">0</b><small>IoT capstone</small></div>
+    </div>
 
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>Graphic Design</h3>
-                    <ul class="skill-list">
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Affinity 3</li>
-                        <li>Canva</li>
-                        <li>Digital Visuals & Layouts</li>
-                    </ul>
-                </div>
+    <div class="split">
+      <div class="side reveal"><h2 class="title">What<br>I do</h2><p>I design and build digital work where clean visuals and clean code meet.</p></div>
+      <div class="cards4">
+        <div class="card reveal"><svg viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16z"/><path d="M14 7l3 3"/></svg><h3>Graphic Design</h3><p>Posters, pins and apparel with a bold, consistent look.</p><span>01</span></div>
+        <div class="card reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 14l4-6 4 6z"/></svg><h3>Brand Identity</h3><p>Logos, submarks and mockups that hold a brand together.</p><span>02</span></div>
+        <div class="card reveal"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 6l-2 12"/></svg><h3>Frontend Dev</h3><p>Responsive interfaces built from design files.</p><span>03</span></div>
+        <div class="card reveal"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg><h3>IoT Systems</h3><p>Connecting hardware and web, like my Ecodrip capstone.</p><span>04</span></div>
+      </div>
+    </div>
 
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Web Development</h3>
-                    <ul class="skill-list">
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Web Creation</li>
-                        <li>Basic Coding Fundamentals</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
+    <div class="mv">
+      <div class="card reveal"><h3 class="gold">Mission</h3><p>To create innovative web designs, UI/UX experiences, and creative digital solutions that provide value to clients and users while continuously expanding my technical knowledge, adapting to emerging technologies, and growing as an IT professional.</p></div>
+      <div class="card reveal"><h3 class="gold">Vision</h3><p>To become a dependable IT professional recognized for delivering creative, user-focused, and high-quality digital solutions while embracing continuous learning and adapting to the ever-evolving technology industry.</p></div>
+    </div>
+    <div class="chips reveal"><span>Adaptable &amp; Dedicated</span><span>Creative &amp; Innovative</span><span>Works Well Under Pressure</span><span>Analytical Thinking</span><span>Time Management</span><span>Continuous Learner</span></div>
+  </div>
+</section>
 
-                <div class="skill-card">
-                    <div class="skill-icon">🖥️</div>
-                    <h3>System Administration</h3>
-                    <ul class="skill-list">
-                        <li>Troubleshooting</li>
-                        <li>System Navigation</li>
-                        <li>Google Workspace</li>
-                        <li>System Maintenance</li>
-                        <li>Technical Support</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">📱</div>
-                    <h3>Mobile & IOT</h3>
-                    <ul class="skill-list">
-                        <li>Android Studio</li>
-                        <li>IOT Development</li>
-                        <li>Device Integration</li>
-                        <li>3D Modeling (Blender)</li>
-                        <li>Hardware-Software Integration</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="strengths-wrapper">
-                <div class="skill-card">
-                    <h3 class="about-heading">Core Strengths</h3>
-                    <div class="strengths-grid">
-                        <div class="strength-item">
-                            <span class="strength-bullet">▹</span> Adaptable & Dedicated
-                        </div>
-                        <div class="strength-item">
-                            <span class="strength-bullet">▹</span> Creative & Innovative
-                        </div>
-                        <div class="strength-item">
-                            <span class="strength-bullet">▹</span> Works Well Under Pressure
-                        </div>
-                        <div class="strength-item">
-                            <span class="strength-bullet">▹</span> Analytical Thinking
-                        </div>
-                        <div class="strength-item">
-                            <span class="strength-bullet">▹</span> Time Management
-                        </div>
-                        <div class="strength-item">
-                            <span class="strength-bullet">▹</span> Continuous Learner
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Featured Projects</h2>
-            </div>
-
-            <div class="projects-grid">
-                <!-- IOT Capstone Project with Gallery -->
-                <div class="project-card featured">
-                    <div class="project-gallery">
-                        <div class="gallery-main">
-                            <img id="capstone-main-img" src="capstone1.jpg" alt="IOT Capstone" class="gallery-main-image">
-                        </div>
-                        <div class="gallery-thumbnails">
-                            <img src="capstone1.jpg" alt="Capstone 1" class="gallery-thumb active" data-target="capstone" data-index="0">
-                            <img src="capstone2.jpg" alt="Capstone 2" class="gallery-thumb" data-target="capstone" data-index="1">
-                            <img src="landing.png" alt="Capstone 3" class="gallery-thumb" data-target="capstone" data-index="2">
-                        </div>
-                        <div class="project-badge">CAPSTONE PROJECT</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>IoT Capstone Project</h3>
-                        <p>
-                            <strong>Ecodrip:</strong> An IoT Web-Based Japanese Eggplant Drip Irrigation with Smart Filtration System for Cuya's Farm.
-                            The system was developed by a three-member team and features a responsive web interface optimized for both desktop and mobile devices.
-                            The platform enables efficient monitoring and management of irrigation processes to support sustainable farming practices.
-                        </p>
-                        <div class="project-link">
-    <a href="https://ecodrip-f6d59.web.app/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="capstone-btn">
-        🔗 View Live Capstone Project
-    </a>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="skills-grid">
+      <div class="card reveal"><h2 class="title sm">My Toolkit</h2>
+        <div class="tools">
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/adobeillustrator/C9A24B" alt="Adobe Illustrator logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="icon-fallback" style="display:none;">Ai</span>
+            <span>Illustrator</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/adobephotoshop/C9A24B" alt="Adobe Photoshop logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="icon-fallback" style="display:none;">Ps</span>
+            <span>Photoshop</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/canva/C9A24B" alt="Canva logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="icon-fallback" style="display:none;">C</span>
+            <span>Canva</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/affinity/C9A24B" alt="Affinity logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="icon-fallback" style="display:none;">A</span>
+            <span>Affinity</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/figma/C9A24B" alt="Figma logo" loading="lazy">
+            <span>Figma</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/blender/C9A24B" alt="Blender logo" loading="lazy">
+            <span>Blender</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/javascript/C9A24B" alt="JavaScript logo" loading="lazy">
+            <span>JavaScript</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/visualstudiocode/C9A24B" alt="Visual Studio Code logo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="icon-fallback" style="display:none;">VS</span>
+            <span>VS Code</span>
+          </div>
+          <div class="tool">
+            <img class="tool-ic" src="https://cdn.simpleicons.org/github/C9A24B" alt="GitHub logo" loading="lazy">
+            <span>GitHub</span>
+          </div>
+          <div class="tool">
+            <svg class="tool-ic" viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="10" rx="1.5"/><rect x="15" y="9" width="7" height="11" rx="1.5"/><path d="M6 19h6"/></svg>
+            <span>Responsive</span>
+          </div>
+          <div class="tool">
+            <svg class="tool-ic" viewBox="0 0 24 24"><path d="M12 2l2.4 5.8L21 9l-5 4.2L17.4 20 12 16.3 6.6 20 8 13.2 3 9l6.6-1.2L12 2z"/></svg>
+            <span>AI Tools</span>
+          </div>
+          <!-- HTML5 -->
+<div class="tool">
+    <img
+        class="tool-ic"
+        src="https://cdn.simpleicons.org/html5/C9A24B"
+        alt="HTML5 logo"
+        loading="lazy"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+    >
+    <span class="icon-fallback" style="display:none;">HTML</span>
+    <span>HTML5</span>
 </div>
 
-                        <div class="project-tags">
-                            <span class="project-tag">Web Development</span>
-                            <span class="project-tag">IOT</span>
-                            <span class="project-tag">Device Integration</span>
-                            <span class="project-tag">Hardware</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Graphic Design Portfolio with Gallery -->
-                <div class="project-card featured">
-                    <div class="project-gallery">
-                        <div class="gallery-main">
-                            <img id="design-main-img" src="poster1.jpg" alt="Graphic Design" class="gallery-main-image">
-                        </div>
-                        <div class="gallery-thumbnails">
-    <img src="poster1.jpg" alt="Design 1" class="gallery-thumb active" data-target="design" data-index="0">
-    <img src="poster2.jpg" alt="Design 2" class="gallery-thumb" data-target="design" data-index="1">
-    <img src="poster3.jpg" alt="Design 3" class="gallery-thumb" data-target="design" data-index="2">
-    <img src="poster4.jpg" alt="Design 4" class="gallery-thumb" data-target="design" data-index="3">
-    <img src="poster5.jpg" alt="Design 5" class="gallery-thumb" data-target="design" data-index="4">
-    <img src="Poster6.jpg" alt="Design 6" class="gallery-thumb" data-target="design" data-index="5">
-    <img src="Poster7.jpg" alt="Design 7" class="gallery-thumb" data-target="design" data-index="6">
-    <img src="Poster8.jpg" alt="Design 8" class="gallery-thumb" data-target="design" data-index="7">
-    <img src="Poster10.jpg" alt="Design 10" class="gallery-thumb" data-target="design" data-index="8">
-    <img src="Poster11.jpg" alt="Design 11" class="gallery-thumb" data-target="design" data-index="9">
+<!-- CSS3 -->
+<div class="tool">
+    <img
+        class="tool-ic"
+        src="https://cdn.simpleicons.org/css3/C9A24B"
+        alt="CSS3 logo"
+        loading="lazy"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+    >
+    <span class="icon-fallback" style="display:none;">CSS</span>
+    <span>CSS3</span>
 </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Graphic Design Portfolio</h3>
-                        <p>Created various digital visuals and layouts for different clients using Adobe Creative Suite and modern design principles.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Photoshop</span>
-                            <span class="project-tag">Illustrator</span>
-                            <span class="project-tag">Canva</span>
-                            <span class="project-tag">Affinity3</span>
-                        </div>
-                    </div>
-                </div>
-
-                
-<!-- Logos -->
-<div class="project-card featured"><div class="project-gallery"><div class="gallery-main"><img id="logo-main-img" src="Logo3.png" class="gallery-main-image"></div><div class="gallery-thumbnails">
-<img src="Logo3.png" class="gallery-thumb active" data-target="logo"><img src="Logo4.png" class="gallery-thumb" data-target="logo"><img src="Logo5.png" class="gallery-thumb" data-target="logo"><img src="Logo6.png" class="gallery-thumb" data-target="logo"><img src="Logo7.png" class="gallery-thumb" data-target="logo"><img src="Logo8.png" class="gallery-thumb" data-target="logo"><img src="Logo9.png" class="gallery-thumb" data-target="logo"><img src="Logo10.png" class="gallery-thumb" data-target="logo"><img src="Logo11.jpg" class="gallery-thumb" data-target="logo"><img src="Logo12.png" class="gallery-thumb" data-target="logo"><img src="Logo13.png" class="gallery-thumb" data-target="logo"></div></div><div class="project-content"><h3>Logo Designs</h3></div></div>
-<!-- Pins -->
-<div class="project-card featured"><div class="project-gallery"><div class="gallery-main"><img id="pin-main-img" src="Pin1.JPG" class="gallery-main-image"></div><div class="gallery-thumbnails">
-<img src="Pin1.jpg" class="gallery-thumb active" data-target="pin"><img src="Pin2.jpg" class="gallery-thumb" data-target="pin"><img src="Pin3.jpg" class="gallery-thumb" data-target="pin"><img src="Pin4.jpg" class="gallery-thumb" data-target="pin"><img src="Pin5.jpg" class="gallery-thumb" data-target="pin"><img src="Pin6.jpg" class="gallery-thumb" data-target="pin"></div></div><div class="project-content"><h3>Pin Designs</h3></div></div>
-<!-- Tshirts -->
-<div class="project-card featured"><div class="project-gallery"><div class="gallery-main"><img id="tshirt-main-img" src="Tshirt1.png" class="gallery-main-image"></div><div class="gallery-thumbnails">
-<img src="Tshirt1.png" class="gallery-thumb active" data-target="tshirt"><img src="Tshirt2.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt3.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt4.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt5.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt6.png" class="gallery-thumb" data-target="tshirt"><img src="Tshirt7.png" class="gallery-thumb" data-target="tshirt"></div></div><div class="project-content"><h3>T-Shirt Designs</h3></div></div>
-
-<!-- 3D Modeling Projects -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div class="project-placeholder">
-                            <div class="project-placeholder-icon">🎲</div>
-                            <div class="project-placeholder-text">3D Models</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>3D Modeling Projects</h3>
-                        <p>Basic 3D models and renders created using Blender for various visual and presentation purposes.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Blender</span>
-                            <span class="project-tag">3D Modeling</span>
-                            <span class="project-tag">Rendering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Android Development -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div class="project-placeholder">
-                            <div class="project-placeholder-icon">📱</div>
-                            <div class="project-placeholder-text">Mobile Apps</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Android Development</h3>
-                        <p>Beginner-level Android applications exploring mobile development fundamentals and UI/UX design principles.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Android Studio</span>
-                            <span class="project-tag">Java/Kotlin</span>
-                            <span class="project-tag">Mobile UI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+      </div>
+      <div class="card reveal"><h2 class="title sm">Work Process</h2>
+        <ol class="steps">
+          <li><b>Discover</b><span>Understand the goal, audience and requirements.</span></li>
+          <li><b>Design</b><span>Sketch, layout and build a consistent visual system.</span></li>
+          <li><b>Develop</b><span>Turn the design into clean, responsive code.</span></li>
+          <li><b>Deliver</b><span>Test, refine and hand over with care.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
 
-   <!-- Contact Section -->
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="head reveal"><h2 class="title">Featured Projects</h2><span>Click a project to explore</span></div>
+    <div class="proj-grid">
+      <article class="proj reveal" data-g="capstone"><span class="no">01</span><img src="capstone1.jpg" alt=""><div class="meta"><div><h3>Ecodrip IoT Capstone</h3><p>IoT &amp; Web Development</p></div><i>&#8599;</i></div></article>
+      <article class="proj reveal" data-g="posters"><span class="no">02</span><img src="poster1.jpg" alt=""><div class="meta"><div><h3>Poster Designs</h3><p>Graphic Design</p></div><i>&#8599;</i></div></article>
+      <article class="proj reveal" data-g="logos"><span class="no">03</span><img src="Logo3.png" alt=""><div class="meta"><div><h3>Logo Designs</h3><p>Brand Identity</p></div><i>&#8599;</i></div></article>
+      <article class="proj reveal" data-g="koa"><span class="no">04</span><img src="KOA submark-02.jpg" alt=""><div class="meta"><div><h3>KOA Brand Identity</h3><p>Logo &amp; Mockups</p></div><i>&#8599;</i></div></article>
+      <article class="proj reveal" data-g="visual"><span class="no">05</span><img src="Expo.jpg" alt=""><div class="meta"><div><h3>Visual Graphics</h3><p>Graphic Design</p></div><i>&#8599;</i></div></article>
+      <article class="proj reveal" data-g="pins"><span class="no">06</span><img src="Pin1.jpg" alt=""><div class="meta"><div><h3>Pin Designs</h3><p>Graphic Design</p></div><i>&#8599;</i></div></article>
+      <article class="proj reveal" data-g="tshirts"><span class="no">07</span><img src="Tshirt1.png" alt=""><div class="meta"><div><h3>T-Shirt Designs</h3><p>Apparel Design</p></div><i>&#8599;</i></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-    <div class="section-container">
-        <div class="section-header">
-            <h2 class="section-title gradient-text">Let's Connect</h2>
-            <p class="section-subtitle">Start the conversation</p>
-        </div>
-
-        <div class="contact-card">
-            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-            <div class="contact-links">
-                <!-- Emails -->
-                <div class="btn btn-primary email-display">
-                    📧 jasper21.mauzar@gmail.com
-                </div>
-                <div class="btn btn-secondary email-display">
-                    📧 jasper0821.mauzar@gmail.com
-                </div>
-                <!-- Phone -->
-                <div class="btn btn-secondary phone-display">
-                    📱 09760169853
-                </div>
-            </div>
-            <p class="contact-location">Based in Province of Sariaya Quezon, Philippines 🇵🇭</p>
-        </div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div><h2>Let's build something innovative together.</h2>
+      <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p></div>
+      <div class="cta-links">
+        <div>jasper21.mauzar@gmail.com</div><div>jasper0821.mauzar@gmail.com</div><div>09760169853</div>
+        <small>Based in Province of Sariaya, Quezon, Philippines</small>
+      </div>
     </div>
+  </div>
 </section>
 
+<footer><p>&copy; 2026 Jasper Mauzar &mdash; Portfolio.</p><p>Where skill meets curiosity, something new begins.</p></footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 IT Student Portfolio.</p>
-        <p class="footer-tagline">innovation and creativity </p>
-    </footer>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="image-modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div class="modal-caption" id="modalCaption"></div>
-    </div>
-
-    <script src="script.js"></script>
+<!-- Lightbox -->
+<div class="lb" id="lb">
+  <button class="lb-x" id="lbX">&times;</button>
+  <button class="lb-nav lb-p" id="lbP">&#10094;</button>
+  <div class="lb-body">
+    <img id="lbImg" alt="">
+    <div class="lb-info"><h3 id="lbT"></h3><p id="lbD"></p><a id="lbL" class="lb-link" target="_blank" rel="noopener">View live project &#8599;</a><small id="lbC"></small></div>
+    <div class="lb-th" id="lbTh"></div>
+  </div>
+  <button class="lb-nav lb-n" id="lbN">&#10095;</button>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
