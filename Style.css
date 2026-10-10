@@ -267,3 +267,43 @@ footer{text-align:center;padding:2rem 1rem 5rem;border-top:1px solid var(--line)
   .lb-body>img{max-height:55vh}
   .fab{bottom:.7rem;right:.7rem}
 }
+
+/* ===== PROJECTS: FAN CARDS (radial half-circle) ===== */
+.fan-wrap{display:grid;grid-template-columns:200px 1fr;gap:2rem;align-items:center}
+.fan-filter{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.fan-filter button{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;padding:.8rem 1rem;background:transparent;color:var(--grey);border:1px solid rgba(255,255,255,.08);border-radius:8px;cursor:pointer;font:700 .78rem 'Space Mono',monospace;letter-spacing:.1em;text-transform:uppercase;transition:.25s}
+.fan-filter button small{font-size:.7rem;opacity:.7}
+.fan-filter button:hover{border-color:var(--gold);color:var(--gold2)}
+.fan-filter button.on{background:var(--gold);color:#0a0a0a;border-color:var(--gold)}
+.fan-main{min-width:0}
+
+.fan-stage{--cw:188px;position:relative;height:420px;overflow:hidden;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:radial-gradient(ellipse at 50% 100%,rgba(201,162,75,.14),transparent 65%),#101010;isolation:isolate}
+.fan-card{position:absolute;left:50%;top:92%;width:var(--cw);aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#1b1b1b;border:1px solid var(--line);box-shadow:0 10px 26px rgba(0,0,0,.5);
+  transform:translate(-50%,-50%) translate(var(--x0,0px),var(--y0,0px)) rotate(var(--r0,0deg));
+  transition:transform .55s cubic-bezier(.22,.85,.32,1),box-shadow .3s ease,border-color .3s ease;
+  will-change:transform;z-index:var(--z)}
+.fan-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+
+/* spread state: JS sets --x/--y/--r per card to real points on a half-circle */
+.fan-stage.spread .fan-card{transform:translate(-50%,-50%) translate(var(--x),var(--y)) rotate(var(--r))}
+.fan-stage.spread .fan-card:hover{z-index:99;border-color:var(--gold2);box-shadow:0 18px 38px rgba(201,162,75,.3);transform:translate(-50%,-50%) translate(var(--x),var(--y)) rotate(var(--r)) scale(1.1)}
+
+.fan-cap{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:.9rem}
+.fan-cap h3{color:var(--gold);text-transform:uppercase;letter-spacing:.08em;font-size:.95rem}
+.fan-cap span{color:var(--grey);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+
+/* capstone live-project link, shown under the stage, outside any image */
+.fan-live{display:none;margin-top:.8rem;text-align:center}
+.fan-live.show{display:block}
+.fan-live a{display:inline-block;padding:.65rem 1.4rem;border-radius:30px;background:var(--gold);color:#0a0a0a;font-weight:700;font-size:.85rem;text-decoration:none;transition:.25s}
+.fan-live a:hover{background:var(--gold2);transform:translateY(-2px)}
+
+@media(max-width:900px){
+  .fan-wrap{grid-template-columns:1fr;gap:1rem}
+  .fan-filter{flex-direction:row;overflow-x:auto;padding-bottom:.4rem;-webkit-overflow-scrolling:touch}
+  .fan-filter button{white-space:nowrap;gap:.6rem;width:auto}
+}
+@media(max-width:600px){
+  .fan-stage{--cw:132px;height:300px}
+  .fan-cap{flex-direction:column;align-items:flex-start;gap:.3rem}
+}
