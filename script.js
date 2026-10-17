@@ -128,6 +128,11 @@ const G = {
         t: "T-Shirt Designs",
         d: "Apparel and t-shirt designs.",
         i: ["Tshirt1.png","Tshirt2.png","Tshirt3.png","Tshirt4.png","Tshirt5.png","Tshirt6.png","Tshirt7.png"]
+    },
+    infographics: {
+        t: "Infographics",
+        d: "Infographic slides that turn information into clear, easy-to-read visuals.",
+        i: ["Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG","Slide6.jpg"]
     }
 };
 
@@ -202,8 +207,8 @@ document.addEventListener('keydown', event => {
 
 // ===== PROJECTS: FAN CARDS (radial half-circle) =====
 // (uses G, open() and show() that already exist above)
-const FAN_ORDER = ['posters','logos','koa','visual','pins','tshirts','capstone'];
-const FAN_LABEL = {posters:'Posters',logos:'Logos',koa:'KOA Brand',visual:'Visual Graphics',pins:'Pins',tshirts:'T-Shirts',capstone:'Ecodrip Capstone'};
+const FAN_ORDER = ['posters','logos','koa','visual','pins','tshirts','infographics','capstone'];
+const FAN_LABEL = {posters:'Posters',logos:'Logos',koa:'KOA Brand',visual:'Visual Graphics',pins:'Pins',tshirts:'T-Shirts',infographics:'Infographics',capstone:'Ecodrip Capstone'};
 
 const fanFilter = document.getElementById('fanFilter');
 const fanStage  = document.getElementById('fanStage');
@@ -244,6 +249,7 @@ function renderFan(key, autoSpread) {
 
     fanStage.classList.remove('spread');
     fanStage.innerHTML = '';
+    fanStage.dataset.group = key;   // lets CSS style specific groups (e.g. landscape infographics)
 
     const cards = group.i.map((src, index) => {
         const card = document.createElement('div');
