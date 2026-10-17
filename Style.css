@@ -298,6 +298,11 @@ footer{text-align:center;padding:2rem 1rem 5rem;border-top:1px solid var(--line)
 .fan-live a{display:inline-block;padding:.65rem 1.4rem;border-radius:30px;background:var(--gold);color:#0a0a0a;font-weight:700;font-size:.85rem;text-decoration:none;transition:.25s}
 .fan-live a:hover{background:var(--gold2);transform:translateY(-2px)}
 
+/* Infographics: landscape slides, shown whole instead of cropped */
+.fan-stage[data-group="infographics"]{--cw:240px}
+.fan-stage[data-group="infographics"] .fan-card{aspect-ratio:16/10}
+.fan-stage[data-group="infographics"] .fan-card img{object-fit:contain;background:#101010}
+
 @media(max-width:900px){
   .fan-wrap{grid-template-columns:1fr;gap:1rem}
   .fan-filter{flex-direction:row;overflow-x:auto;padding-bottom:.4rem;-webkit-overflow-scrolling:touch}
@@ -305,5 +310,6 @@ footer{text-align:center;padding:2rem 1rem 5rem;border-top:1px solid var(--line)
 }
 @media(max-width:600px){
   .fan-stage{--cw:132px;height:300px}
+  .fan-stage[data-group="infographics"]{--cw:170px}
   .fan-cap{flex-direction:column;align-items:flex-start;gap:.3rem}
 }
