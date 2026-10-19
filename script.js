@@ -463,6 +463,7 @@ const fanTitle  = document.getElementById('fanTitle');
 const fanHint   = document.getElementById('fanHint');
 const fanLive   = document.getElementById('fanLive');
 const canHover  = window.matchMedia('(hover:hover)').matches;
+let fanSeen = false;   // true once the cards have fanned out for the visitor
 
 // Logo / Mockups selector shown above the stage for groups that have sections
 const fanTabs = document.createElement('div');
@@ -581,7 +582,7 @@ function renderFan(key, autoSpread, secKey) {
     layoutFan(cards);
 
     fanTitle.textContent = group.t + ' \u00b7 ' + (view.sec ? view.sec.label + ' \u00b7 ' : '') + view.i.length;
-    fanHint.textContent = canHover ? 'Hover to spread \u00b7 click a card to open' : 'Tap a card to open';
+    fanHint.textContent = canHover ? 'Click a card to open' : 'Tap a card to open';
 
     if (fanLive) {
         fanLive.classList.toggle('show', Boolean(group.l));
@@ -590,7 +591,7 @@ function renderFan(key, autoSpread, secKey) {
             : '';
     }
 
-    if (autoSpread) {
+    if (autoSpread || fanSeen) {
         setTimeout(() => fanStage.classList.add('spread'), 80);
     }
 }
@@ -605,9 +606,22 @@ if (fanFilter && fanStage) {
         fanFilter.appendChild(li);
     });
 
-    // compact by default; spreads only on hover (desktop) or tap (touch)
-    fanStage.addEventListener('mouseenter', () => { if (canHover) fanStage.classList.add('spread'); });
-    fanStage.addEventListener('mouseleave', () => { if (canHover) fanStage.classList.remove('spread'); });
-
     renderFan('koa', false);
+
+    // cards fan out automatically the first time the projects section scrolls into view
+    if ('IntersectionObserver' in window) {
+        const fanObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    fanSeen = true;
+                    fanStage.classList.add('spread');
+                    fanObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.35 });
+        fanObserver.observe(fanStage);
+    } else {
+        fanSeen = true;
+        fanStage.classList.add('spread');
+    }
 }
