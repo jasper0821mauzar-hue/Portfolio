@@ -370,3 +370,10 @@ footer{text-align:center;padding:2rem 1rem 5rem;border-top:1px solid var(--line)
   .fan-stage[data-view="logo"]{--cw:140px}
   .fan-stage[data-view="mockups"]{--cw:150px}
 }
+
+/* Social links in the contact card: one pill, two links, thin divider between them */
+.cta-links .cta-social{display:flex;align-items:stretch;padding:0;overflow:hidden}
+.cta-links .cta-social:hover{transform:none}
+.cta-links .cta-social a{flex:1;text-align:center;background:transparent;border-radius:0;padding:.9rem 1.2rem}
+.cta-links .cta-social a + a{border-left:1px solid rgba(255,255,255,.3)}
+.cta-links .cta-social a:hover,.cta-links .cta-social a:focus-visible{transform:none;background:rgba(255,255,255,.1);color:var(--gold2)}
