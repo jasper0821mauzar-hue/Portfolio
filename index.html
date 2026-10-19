@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jasper Mauzar | Portfolio</title>
+<meta name="description" content="Portfolio of Jasper Mauzar: brand identity, graphic design and front-end web development, based in Sariaya, Quezon, Philippines.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
@@ -24,9 +25,9 @@
 <div class="fab" id="fab">
   <ul class="fab-menu" id="fabMenu">
     <li><a href="#home">Home</a></li>
-    <li><a href="#profile">Professional background</a></li>
-    <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#profile">What I do</a></li>
+    <li><a href="#skills">Toolkit &amp; Process</a></li>
     <li><a href="#contact">Contacts</a></li>
   </ul>
   <button class="fab-btn" id="fabBtn" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -58,12 +59,27 @@
   <span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>Figma</span><span>Canva</span><span>Affinity</span><span>Blender</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>IoT</span>
 </div></div>
 
-<!-- PROFESSIONAL BACKGROUND -->
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="head reveal"><h2 class="title">Featured Projects</h2><span>Click a project to explore</span></div>
+    <div class="fan-wrap reveal">
+  <ul class="fan-filter" id="fanFilter"></ul>
+  <div class="fan-main">
+    <div class="fan-stage" id="fanStage"></div>
+    <div class="fan-cap"><h3 id="fanTitle"></h3><span id="fanHint">Hover to spread · click a card to open</span></div>
+    <div class="fan-live" id="fanLive"></div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
 <section id="profile">
   <div class="wrap">
     <div class="stats reveal">
-      <div><b data-count="10">0</b><small>Poster designs</small></div>
-      <div><b data-count="11">0</b><small>Logo designs</small></div>
+      <div><b data-count="5">0</b><small>Poster designs</small></div>
+      <div><b data-count="2">0</b><small>Logo designs</small></div>
       <div><b data-count="7">0</b><small>T-shirt designs</small></div>
       <div><b data-count="1">0</b><small>IoT capstone</small></div>
     </div>
@@ -180,21 +196,6 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="wrap">
-    <div class="head reveal"><h2 class="title">Featured Projects</h2><span>Click a project to explore</span></div>
-    <div class="fan-wrap reveal">
-  <ul class="fan-filter" id="fanFilter"></ul>
-  <div class="fan-main">
-    <div class="fan-stage" id="fanStage"></div>
-    <div class="fan-cap"><h3 id="fanTitle"></h3><span id="fanHint">Hover to spread · click a card to open</span></div>
-    <div class="fan-live" id="fanLive"></div>
-  </div>
-</div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
@@ -202,8 +203,9 @@
       <div><h2>Let's build something innovative together.</h2>
       <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p></div>
       <div class="cta-links">
-        <div>jasper21.mauzar@gmail.com</div><div>jasper0821.mauzar@gmail.com</div><div>09760169853</div>
-        <small>Based in Province of Sariaya, Quezon, Philippines</small>
+        <a href="mailto:jasper0821.mauzar@gmail.com?subject=Portfolio%20inquiry">jasper0821.mauzar@gmail.com</a>
+        <a href="tel:+639760169853">0976 016 9853</a>
+        <small>Based in Sariaya, Quezon, Philippines</small>
       </div>
     </div>
   </div>
@@ -213,14 +215,15 @@
 
 <!-- Lightbox -->
 <div class="lb" id="lb">
-  <button class="lb-x" id="lbX">&times;</button>
-  <button class="lb-nav lb-p" id="lbP">&#10094;</button>
+  <button class="lb-x" id="lbX" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-p" id="lbP" aria-label="Previous">&#10094;</button>
   <div class="lb-body">
     <img id="lbImg" alt="">
     <div class="lb-info"><h3 id="lbT"></h3><p id="lbD"></p><a id="lbL" class="lb-link" target="_blank" rel="noopener">View live project &#8599;</a><small id="lbC"></small></div>
     <div class="lb-th" id="lbTh"></div>
+    <div class="cs" id="lbCS"></div>
   </div>
-  <button class="lb-nav lb-n" id="lbN">&#10095;</button>
+  <button class="lb-nav lb-n" id="lbN" aria-label="Next">&#10095;</button>
 </div>
 <script src="script.js"></script>
 </body>
