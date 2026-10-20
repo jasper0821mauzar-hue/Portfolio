@@ -289,7 +289,7 @@ const G = {
     infographics: {
         t: "Infographics",
         d: "Infographic slides from a freelance project.",
-        i: ["Slide2.JPG","Slide3.JPG","Slide4.JPG","Slide5.JPG","Slide6.jpg"]
+        i: ["Slide-01.png","Slide-02.png","Slide-03.png","Slide-04.png","Slide-05.png"]
     }
 };
 
