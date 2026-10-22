@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="fx.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="icon" type="image/png" href="Porfoliologo.png">
 </head>
 <body>
@@ -35,6 +37,7 @@
 
 <!-- HOME -->
 <section class="hero" id="home">
+  <div class="fx-particles" id="fxParticles" aria-hidden="true"></div>
   <div class="hero-stage">
     <div class="hero-kicker">PORTFOLIO <span> / 2026</span></div>
     <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
@@ -206,7 +209,7 @@
 <footer><p>&copy; 2026 Jasper Mauzar &mdash; Portfolio.</p><p>Where skill meets curiosity, something new begins.</p></footer>
 
 <!-- Lightbox -->
-<div class="lb" id="lb">
+<div class="lb" id="lb" data-lenis-prevent>
   <button class="lb-x" id="lbX" aria-label="Close">&times;</button>
   <button class="lb-nav lb-p" id="lbP" aria-label="Previous">&#10094;</button>
   <div class="lb-body">
@@ -218,5 +221,10 @@
   <button class="lb-nav lb-n" id="lbN" aria-label="Next">&#10095;</button>
 </div>
 <script src="script.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script type="module" src="fx.js"></script>
 </body>
 </html>
